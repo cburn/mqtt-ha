@@ -1,0 +1,12 @@
+[Unit]
+Description=MQTT to DMX Bridge
+Wants=dev-dmx.device
+After=dev-dmx.device
+
+[Service]
+ExecStart=/usr/local/bin/twistd --python=/usr/local/lib/mqtt-dmx.tac --nodaemon --pidfile=/var/run/mqtt-dmx.pid --prefix=mqtt-dmx
+PIDFile=/var/run/mqtt-dmx.pid
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

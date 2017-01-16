@@ -1,0 +1,12 @@
+[Unit]
+Description=MQTT to TriStar Bridge
+Wants=dev-tristar.device
+After=dev-tristar.device
+
+[Service]
+ExecStart=/usr/local/bin/twistd --python=/usr/local/lib/mqtt-tristar.tac --nodaemon --pidfile=/var/run/mqtt-tristar.pid --prefix=mqtt-tristar
+PIDFile=/var/run/mqtt-tristar.pid
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
