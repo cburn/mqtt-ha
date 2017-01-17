@@ -19,5 +19,5 @@ setup(name="mqtttools",
         "Topic :: Home Automation"
       ],
       install_requires = ['Twisted', 'twisted-mqtt'],
-
+      license = "GPL-3.0",
 )

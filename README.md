@@ -1,4 +1,4 @@
-# MQTT Tools
+# MQTT HA Tools
 Collection of MQTT Home Automation Tools.
 
 ## Tools
@@ -10,3 +10,6 @@ Collection of MQTT Home Automation Tools.
 
 * twisted-mqtt
 * Twisted
+
+## License
+See the [LICENSE](LICENSE.md) file for license rights and limitations (GPL-3.0).
